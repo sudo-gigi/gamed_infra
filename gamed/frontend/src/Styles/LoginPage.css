@@ -1,0 +1,42 @@
+#loginPage-aside {
+  grid-row: 1;
+  grid-column: 1;
+  background-image: url("../assets/images/Create_Account_Bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#loginPage-card-container {
+  margin-top: 80px;
+}
+
+#login-page-wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#loginpage-main {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .loginPage-aside {
+    display: none;
+  }
+
+  .loginPage-container {
+    flex-direction: column;
+  }
+}

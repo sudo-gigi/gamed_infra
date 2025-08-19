@@ -1,0 +1,22 @@
+# Runtime
+node_modules/
+.env*
+*.pem
+*.key
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Tests
+__tests__/
+coverage/
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore

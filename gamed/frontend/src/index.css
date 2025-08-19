@@ -1,0 +1,163 @@
+/* General Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Container for Success/Error Pages */
+.success_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+}
+
+.success_text,
+.error_text {
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.success_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.error_small_text {
+  color: #323132;
+  font-size: 1rem;
+  margin-bottom: 64px;
+}
+
+/* Password Verification Card */
+.passwordverification__card {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.passwordverification__heading {
+  font-weight: 600;
+  font-size: 2.3rem;
+  margin-bottom: 22px;
+}
+
+.passwordverification__text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+/* Form Group */
+.passwordverification__formgroup {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.passwordverification__label {
+  color: #323132;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.passwordverification__password {
+  border-radius: 16px;
+  padding: 14px 16px;
+  border: 1px solid #bec2bf;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.custom_button {
+  text-align: center;
+  padding: 14px;
+  width: 100%;
+  max-width: 550px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #74ff9e;
+  background-color: #3c0099;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .success_text,
+  .error_text {
+    font-size: 1.8rem;
+  }
+
+  .passwordverification__heading {
+    font-size: 1.8rem;
+  }
+
+  .passwordverification__text {
+    font-size: 1.2rem;
+  }
+
+  .passwordverification__formgroup {
+    width: 90%;
+  }
+
+  .passwordverification__password {
+    font-size: 0.9rem;
+    padding: 12px 16px;
+  }
+
+  .custom_button {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .success_text,
+  .error_text {
+    font-size: 1.6rem;
+  }
+
+  .passwordverification__heading {
+    font-size: 1.6rem;
+  }
+
+  .passwordverification__text {
+    font-size: 1rem;
+  }
+
+  .passwordverification__formgroup {
+    width: 90%;
+  }
+
+  .passwordverification__password {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .custom_button {
+    font-size: 1rem;
+    width: 100%;
+  }
+}

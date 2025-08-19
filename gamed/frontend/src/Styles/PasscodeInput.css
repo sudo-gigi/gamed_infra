@@ -1,0 +1,22 @@
+.passcode-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.passcode-input {
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.passcode-input:focus {
+  border-color: #3c0099;
+  box-shadow: 0 0 8px rgba(60, 0, 153, 0.5);
+}

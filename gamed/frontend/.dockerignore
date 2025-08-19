@@ -1,0 +1,20 @@
+# Development
+node_modules/
+.git/
+.env*
+*.log
+Dockerfile
+.dockerignore
+
+# Build artifacts
+.cache/
+dist/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,155 @@
+#social-navbar {
+  text-align: center;
+  margin: 70px 0;
+}
+
+#social-heading {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #323132;
+  text-transform: capitalize;
+}
+
+#header-line {
+  position: relative;
+  display: inline-block;
+}
+
+#header-line::after {
+  content: "";
+  position: absolute;
+  left: -80px;
+  bottom: -10px;
+  width: 150%;
+  height: 13px;
+  background-image: url("../assets/images/Socia_link_header_Line.svg");
+  /* background-image: url("../assets/line.png"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#social-link-container {
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    #7d55bb26 0%,
+    #9d80cc0d 50%,
+    #fefdff00 100%
+  );
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+#social-links::before,
+#social-links::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#social-links::before {
+  left: 0;
+  background: #fefdff00;
+  /* background: linear-gradient(to right, #fff 0%, transparent 100%); */
+}
+
+#social-links::after {
+  right: 0;
+  background: #fefdff00;
+  /* background: linear-gradient(to left, #fff 0%, transparent 100%); */
+}
+
+#scroll-track {
+  display: flex;
+  gap: 100px;
+  white-space: nowrap;
+  animation: pingpong 25s ease-in-out infinite alternate-reverse;
+  flex-shrink: 0;
+  width: max-content;
+}
+
+#scroll-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes pingpong {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+#social-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+#social-link:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+#social-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 6px;
+}
+
+#social-name {
+  font-size: 31.3px;
+  font-weight: 600;
+  font-family: "Raleway";
+  color: #323132;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  line-height: 37.5px;
+}
+
+@media (max-width: 768px) {
+  #social-links {
+    animation-duration: 60s;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #social-links {
+    animation-duration: 50s;
+  }
+}
+
+@media (min-width: 1025px) {
+  #social-links {
+    animation-duration: 40s;
+  }
+}

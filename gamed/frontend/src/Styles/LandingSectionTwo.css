@@ -1,0 +1,75 @@
+#landing-section-two {
+  position: relative;
+}
+
+#land-section-two-header {
+  /* What To Expect? */
+  top: 20px;
+  left: 36%;
+  position: absolute;
+  /* Sec/GamedH3/semibold */
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 39.06px;
+  line-height: 47px;
+  /* identical to box height, or 120% */
+
+  /* Primary black */
+  color: #323132;
+}
+
+#levelUp-card {
+  position: absolute;
+  top: 90px;
+  left: 80px;
+  bottom: 200px;
+  z-index: 1;
+}
+
+#unlockAchivements-card {
+  position: absolute;
+  top: 140px;
+  left: 495px;
+  bottom: 115px;
+  z-index: 1;
+}
+
+#competeWF-card {
+  position: absolute;
+  top: 90px;
+  right: 80px;
+  bottom: 200px;
+  z-index: 1;
+}
+
+#background-styling {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  width: 99%;
+  height: 380px;
+  background: #3C0099;
+  border-radius: 32px 32px 0 0;
+
+  background-image: repeating-radial-gradient(
+    circle,
+    #74FF9E0D 0%,      /* Center, almost transparent */
+    #74FF9E0D 5px,     /* 1st ring, almost transparent */
+    transparent 8px,
+    transparent 15px,    /* Space between 1st and 2nd ring */
+    #74FF9E26 10px,     /* 2nd ring, slightly more opaque */
+    #74FF9E26 12px,
+    transparent 20px,
+    transparent 22px,    /* Space between 2nd and 3rd ring */
+    #74FF9E3F 15px,    /* 3rd ring, more opaque */
+    #74FF9E3F 20px,
+    transparent 30px,
+    transparent 75px,   /* Space between 3rd and 4th ring */
+    #74FF9E80 25px,    /* 4th ring, the thickest */
+    #74FF9E80 35px
+  );
+
+  background-size: 120px 120px;
+  background-position: 0px 30px;
+}

@@ -1,0 +1,43 @@
+.test-failure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #fff0f0;
+  text-align: center;
+}
+
+.emoji-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+
+.fail-message {
+  color: #d32f2f;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.fail-subtext {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.retry-btn {
+  padding: 12px 24px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.retry-btn:hover {
+  background-color: #b71c1c;
+}

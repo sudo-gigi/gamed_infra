@@ -1,0 +1,78 @@
+#login-fieldset {
+  text-align: center;
+  padding: 0 1%;
+  border: none;
+}
+
+#login-fieldset legend {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 62px;
+  line-height: 73px;
+  color: #323132;
+  margin: 0 0 35px 0;
+}
+
+#login-form {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#login-button-wrapper {
+  width: 550px;
+  max-width: 100%;
+  margin: 20px;
+}
+
+#redirect-to-log-in {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.5px;
+  color: #323132;
+  margin-top: 8px;
+}
+
+#redirect-to-log-in a {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3c0099;
+  text-decoration: none;
+}
+
+#redirect-to-log-in a:hover {
+  text-decoration: underline;
+  /* color: #74ff9e; */
+}
+
+#or-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 340px;
+  position: relative;
+  height: 30px;
+}
+
+#or-wrapper hr {
+  flex-grow: 1;
+  text-align: center;
+  margin-top: 15px;
+  color: #bec2bf;
+}
+
+#or-wrapper p {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #323132;
+}

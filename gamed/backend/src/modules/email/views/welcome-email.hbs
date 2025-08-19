@@ -1,0 +1,151 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Welcome Email</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f9f9fb;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: auto;
+        background-color: white;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      .header {
+        text-align: center;
+        padding: 40px 20px 0;
+      }
+
+      .header img {
+        width: 80px;
+        height: auto;
+      }
+
+      .hero-image {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .hero-image img {
+        width: 200px;
+        height: auto;
+      }
+
+      .content {
+        text-align: center;
+        padding: 0 30px 40px;
+      }
+
+      .content h1 {
+        color: #1a1a1a;
+        font-size: 28px;
+        margin-bottom: 16px;
+      }
+
+      .content p {
+        color: #4a4a4a;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+
+      .button {
+        display: inline-block;
+        background-color: #3b0f99;
+        color: #00ff84;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 14px 28px;
+        border-radius: 12px;
+        font-size: 16px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 14px;
+        color: #999;
+        padding: 30px 20px;
+      }
+
+      .social-icons img {
+        width: 24px;
+        margin: 0 8px;
+      }
+
+      .divider {
+        border-top: 1px solid #eee;
+        margin: 20px auto;
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='header'>
+        <img
+          src='https://lh3.googleusercontent.com/d/1DqH2z-TOnHE4_gCO7z00r9XzFgrHm-HP'
+          alt='GamEd Logo'
+        />
+      </div>
+
+      <div class='hero-image'>
+        <img
+          src='https://lh3.googleusercontent.com/d/1zkgMWVVksgN9EnltHJC-K9WQ5bov1JZJ'
+          alt='Welcome Aboard'
+        />
+      </div>
+
+      <div class='content'>
+        <h1>Hello {{name}}!</h1>
+        <p>
+          We’re so excited to have you on board!
+          <strong>GamEd</strong>
+          is your fun space to learn, level up, and unlock cool rewards. Get
+          started by logging in and completing your first challenge.
+        </p>
+        <a href='{{ctaLink}}' class='button'>Get Started</a>
+      </div>
+
+      <div class='footer'>
+        <div class='social-icons'>
+          <a href='{{twitterLink}}'><img
+              src='https://cdn-icons-png.flaticon.com/512/733/733579.png'
+              alt='Twitter'
+            /></a>
+          <a href='{{linkedinLink}}'><img
+              src='https://cdn-icons-png.flaticon.com/512/174/174857.png'
+              alt='LinkedIn'
+            /></a>
+          <a href='{{facebookLink}}'><img
+              src='https://cdn-icons-png.flaticon.com/512/733/733547.png'
+              alt='Facebook'
+            /></a>
+        </div>
+        <div class='divider'></div>
+        <p>
+          Need help? Email us at
+          <a href='mailto:Gamed25@gmail.com'>Gamed25@gmail.com</a><br />
+          <a href='{{unsubscribeLink}}'>Unsubscribe</a>
+          /
+          <a href='{{webVersionLink}}'>Web Version</a><br /><br />
+          ©
+          {{year}}
+          GamEd Inc. All rights reserved<br />
+          Lekki Epe Expressway, Lagos State Nigeria<br />
+          You're receiving this email because you signed up for updates from
+          GamEd.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

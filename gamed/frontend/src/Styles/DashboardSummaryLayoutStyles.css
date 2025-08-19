@@ -1,0 +1,30 @@
+#dashboard-summary-container header {
+  /* MY DASHBOARD */
+
+  /* Gamed H4/Medium */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31.25px;
+  line-height: 38px;
+  margin: 2rem;
+
+  /* Primary black */
+  color: #323132;
+}
+
+#dashboard-summary-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 10px;
+  margin: 2rem;
+  width: 992px;
+  height: 312px;
+
+  /* Grey/101 */
+  background: #ecedec;
+  border-radius: 8px;
+}

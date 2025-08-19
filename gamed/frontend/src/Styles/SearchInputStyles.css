@@ -1,0 +1,41 @@
+#search-input {
+  /* Component */
+  position: relative;
+  width: 324px;
+
+  /* White color */
+  background: #fefdff;
+  /* Grey/601 */
+  border: 0.5px solid #bec2bf;
+  border-radius: 16px;
+  margin: 0.5rem;
+}
+
+#search-input:placeholder {
+  /* Search Courses */
+
+  /* Gamed Bodytext/Medium */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height, or 120% */
+  display: flex;
+  align-items: center;
+
+  /* Grey/401 */
+  color: #cfd1cf;
+}
+
+#search-input::before {
+  content: ""; /* Empty content, the icon is a background image */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px; /* Icon width */
+  height: 16px; /* Icon height */
+  background-image: url("../assets/images/search-normal-icon.svg");
+  background-size: contain; /* Ensure the whole icon is visible */
+}

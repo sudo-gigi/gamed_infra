@@ -1,0 +1,76 @@
+#dashboard-side-nav {
+  height: 100vh; /* Full height of the viewport */
+  width: 240px; /* Fixed width for the sidebar */
+  background-color: #280066; /* Dark purple background */
+  padding-top: 20px; /* Add some space at the top */
+  position: fixed; /* Stay in place during scrolling */
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: width 0.3s ease; /* Smooth transition for width changes */
+  z-index: 1000; /* Ensure it's above other elements */
+  overflow-x: hidden;  /* Prevent horizontal scrollbar */
+}
+
+.side-nav img {
+  width:120px;
+  margin-left: 20px;
+}
+
+.side-nav ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+}
+
+.side-nav ul li {
+  /* Styles for each menu item */
+  padding: 10px 10px 10px 40px;
+  margin: 48px 0px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 20px;
+  color: white; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  white-space: nowrap; 
+  overflow: hidden;      
+  text-overflow: ellipsis;  
+}
+
+
+
+.side-nav ul li:hover {
+  background-color: #74FF9E; /* Light green on hover */
+  color: #280066;
+}
+
+.side-nav ul li.active {
+  background-color: #74FF9E; /* Light green for active state */
+  color: #280066;
+}
+
+.side-nav ul li::before { 
+  content: ""; /* Empty content, the icon is set as background */
+  position: absolute;
+  left: 0;
+  margin: 12px 0 12px 5px;
+  transform: translateY(-50%); /* Vertically center the icon */
+  width: 24px; /* Icon width */
+  height: 24px; /* Icon height */
+  background-size: cover; /* Or contain, adjust as needed */
+  background-repeat: no-repeat;
+}
+
+.side-nav ul li:nth-child(1)::before {
+  background-image: url("../assets/images/DarkDashboadMenuIcon.svg")
+}
+
+.side-nav ul li:nth-child(2)::before {
+  background-image: url("../assets/images/myCoursesMenuIcon.svg")
+}
+
+.side-nav ul li:nth-child(3)::before {
+  background-image: url("../assets/images/DarkLeaderBoardIcon.svg")
+}
+

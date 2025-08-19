@@ -1,0 +1,196 @@
+#dashboard-course-cards {
+  /* Course card */
+  width: 244.02px;
+  height: 304px;
+
+  /* White color */
+  background: #fefdff;
+  /* Grey/601 */
+  border: 0.340807px solid #bec2bf;
+  box-shadow: 6.81614px 6.81614px 13.6323px -20.4484px #3c0099;
+  border-radius: 12px;
+  margin: 2rem;
+}
+
+#course-card-image {
+  /* Picture */
+  width: 210px;
+  height: 96px;
+  border-radius: 8px;
+  margin: 0.5rem;
+}
+
+#dashboard-course-cards-title {
+  /* Build Responsive Websites from Scratch using HTML & CSS */
+
+  width: 186px;
+  height: 33px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 136% */
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  /* Primary black */
+  color: #323132;
+}
+
+#ratin-and-profile-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  height: fit-content;
+  margin: 0.5rem;
+}
+
+#ratin-and-profile-flex figure {
+  margin: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: fit-content;
+  gap: 5px;
+}
+
+#ratin-and-profile-flex figure img {
+  height: 28px;
+  width: 28px;
+  border-radius: 24px;
+}
+
+#ratin-and-profile-flex figcaption {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 7px;
+  align-self: center;
+  /* Primary black */
+  color: #323132;
+}
+
+.cc-grid-styles {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 7px;
+
+  /* Primary black */
+  color: #323132;
+  margin: 0;
+}
+
+.course-card-grid-container {
+  display: grid;
+  grid-template-areas:
+    "lesson assessment"
+    "time quiz";
+  row-gap: 4px;
+  width: fit-content;
+  margin: 0.5rem;
+}
+
+#cc-grid-item-1 {
+  grid-area: lesson;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 10px;
+  width: 95px;
+  height: 16px;
+  align-self: stretch;
+  /* Pri/101 */
+  background: #d8cceb;
+  /* White color */
+  border-right: 0.5px solid #fefdff;
+  border-radius: 2px 0px 0px 2px;
+}
+
+#cc-grid-item-2 {
+  grid-area: assessment;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 10px;
+
+  width: 95px;
+  height: 16px;
+
+  /* Pri/101 */
+  background: #d8cceb;
+  /* White color */
+  border-right: 0.5px solid #fefdff;
+  border-radius: 2px 0px 0px 2px;
+}
+
+#cc-grid-item-3 {
+  grid-area: time;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 10px;
+
+  width: 95px;
+  height: 16px;
+
+  /* Pri/101 */
+  background: #d8cceb;
+  /* White color */
+  border-right: 0.5px solid #fefdff;
+  border-radius: 2px 0px 0px 2px;
+}
+
+#cc-grid-item-4 {
+  grid-area: quiz;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 10px;
+
+  width: 95px;
+  height: 16px;
+
+  /* Pri/101 */
+  background: #d8cceb;
+  /* White color */
+  border-right: 0.5px solid #fefdff;
+  border-radius: 2px 0px 0px 2px;
+}
+
+#dashboard-course-cards a {
+  /* Resume Courses */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 7px;
+  color: #3c0099;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 8px;
+  background: #d8bfff;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+#cc-progress-resume-flex {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  margin: 0.5rem;
+}

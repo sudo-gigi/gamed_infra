@@ -1,0 +1,58 @@
+#landing-nav-header {
+  background-color: #3c0099;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+#header-list {
+  display: flex; /* Enable flexbox for the list */
+  flex-direction: row; /* Arrange items in a row */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center;
+  list-style: none; /* Remove default list styling (bullets) */
+  padding: 40px 92px; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  width: 100%;
+}
+
+.header-span {
+  /* nav text */
+  padding: 16px;
+  cursor: pointer;
+  /* Gamed H6/Semibold */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  /* White color */
+  color: #fefdff;
+}
+
+#header-list-item-2 span{
+  /* About us */
+  /* Gamed Bodytext/Medium */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height, or 120% */
+
+  /* White color */
+  color: #fefdff;
+}
+
+#header-list-item-2 span:hover {
+  text-decoration: underline;
+  font-size: 14px;
+  color: #74FF9E;
+}
+
+.header-span:hover{
+  text-decoration: underline;
+  font-size: 14px;
+  color: #74FF9E;
+}

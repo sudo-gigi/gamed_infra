@@ -1,0 +1,163 @@
+#create-account-fieldset {
+  text-align: center;
+  padding: 0 1%;
+  border: none;
+}
+
+#create-account-fieldset legend {
+  /* Create Account */
+  /* Gamed H1/Semibold */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #323132;
+  margin: 0 0 56px 0;
+}
+
+#create-account-form {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#redirect-to-log-in {
+  /* Have an account? */
+  /* Gamed Bodytextsmall/reg */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  /* identical to box height, or 120% */
+  color: #323132;
+  margin-top: 8px;
+}
+
+#redirect-to-log-in span {
+  /* Login */
+  /* Gamed Bodytextsmall/Medium */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  /* Pri/1001 */
+  color: #3c0099;
+}
+
+#create-acc-button-wrapper {
+  width: 550px;
+  max-width: 100%;
+  margin: 20px;
+}
+
+#or-wrapper {
+  width: 80%;
+  position: relative;
+  height: 30px;
+  margin-bottom: ;
+}
+
+#or-wrapper hr {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#or-wrapper p {
+  /* Or */
+  /* Gamed p/Semibold */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.56rem;
+  line-height: 1.875rem;
+  /* identical to box height, or 120% */
+  color: #323132;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+  left: 45%;
+  bottom: 5%;
+  background-color: white;
+  padding: 0 3px;
+  border-radius: 50%;
+}
+
+/* For laptop screens (less than 1440px) */
+@media only screen and (min-width: 1001px) and (max-width: 1440px) {
+  #create-account-fieldset legend {
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    margin: 0 0 20px 0;
+  }
+
+  #create-account-form input {
+    padding: 4px 8px;
+    margin: 0.5rem;
+    max-width: 382px;
+    max-height: 50px;
+    min-width: 270px;
+    min-height: 35px;
+  }
+
+  #create-account-form input::placeholder {
+    /* input your... */
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    padding: 0.1rem;
+  }
+
+  #create-account-form label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  /* When you focus */
+  .flex-floating-label input:focus + label,
+  .flex-floating-label label.active {
+    transform: translateY(16px) translateX(30px);
+    font-size: 0.7rem !important;
+  }
+
+  #create-acc-button-wrapper button {
+    width: 90% !important;
+    margin: 0.6rem 0 0px 0.8rem !important;
+  }
+
+  #redirect-to-log-in {
+    font-weight: 500;
+    font-size: 0.82rem;
+    line-height: 0.9rem;
+    margin: 8px 0px 10px 0;
+  }
+  #redirect-to-log-in span {
+    font-weight: 500;
+    font-size: 0.82rem;
+    line-height: 0.9rem;
+  }
+
+  #or-wrapper {
+    width: 75%;
+  }
+  #or-wrapper p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.875rem;
+  }
+
+  #create-account-form #google-redirect-button {
+    width: 95% !important;
+    padding: 1.5% 0 !important;
+  }
+}

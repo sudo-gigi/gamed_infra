@@ -1,0 +1,74 @@
+.section-two-cards {
+  /* Card */
+  width: 362px;
+  height: 488px;
+
+  border: 0.5px solid #bec2bf;
+  box-shadow: 4px 4px 10px -8px rgba(53, 54, 53, 0.5);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+#levelUp-card {
+  background: #74ff9e;
+}
+
+#unlockAchivements-card {
+  background: #FEFDFF;
+}
+
+#competeWF-card {
+  background: #D8CCEB;
+}
+
+.section-two-cards img {
+  /* Picture */
+
+  width: 293.05px;
+  height: 198.04px;
+  border-radius: 13.7368px;
+  margin: 29px 34px 24px 35px;
+}
+
+.section-two-cards article {
+  margin-left: 24px;
+  margin-right: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-two-cards header {
+  /* Level Up Your Learning */
+  height: 28px;
+
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22.8947px;
+  line-height: 27px;
+  /* identical to box height, or 120% */
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.section-two-cards p {
+  /* Master new skills and watch your progress grow. Every lesson completed earns you points */
+  height: 72px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  display: flex;
+  align-items: center;
+
+  /* Primary black */
+  color: #323132;
+}

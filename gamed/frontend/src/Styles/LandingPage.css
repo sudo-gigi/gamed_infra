@@ -1,0 +1,19 @@
+.scroll-container {
+  scroll-snap-type: y mandatory; /* Vertical scroll snapping */
+  overflow-y: scroll;           /* Enable vertical scrolling */
+  overflow-x: hidden;
+  height: 100vh;             /* Full viewport height */
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.snap-section {
+  scroll-snap-align: start;   /* Snap to the start of the section */
+  height: 100vh;             /* Full viewport height */
+  width: 100vw;
+  box-sizing: border-box;
+  padding:  0px;
+  text-decoration: none; /* Remove default underline */
+  transition: text-decoration 0.3s ease; /* Smooth transition */
+}

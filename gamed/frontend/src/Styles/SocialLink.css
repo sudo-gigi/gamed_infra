@@ -1,0 +1,80 @@
+.social-navbar {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.social-heading {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #323132;
+  text-transform: capitalize;
+}
+
+.header-line {
+  position: relative;
+  display: inline-block;
+}
+
+.header-line::after {
+  content: "";
+  position: absolute;
+  left: -80px;
+  bottom: -10px;
+  width: 150%;
+  height: 13px;
+  background-image: url("../assets/images/Socia_link_header_Line.svg");
+  /* background-image: url("../assets/line.png"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.link-conatiner {
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    #7d55bb26 0%,
+    #9d80cc0d 50%,
+    #fefdff00 100%
+  );
+  min-height: 100px;
+  padding: 100px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  animation: scroll 20s linear infinite;
+
+  /* gap: 30px; */
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 6px;
+}
+
+.social-name {
+  font-size: 23px;
+  font-weight: 600;
+  font-family: "Raleway";
+  color: #323132;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
